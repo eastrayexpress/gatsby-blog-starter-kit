@@ -17,8 +17,8 @@ export default function Index(props) {
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <div>Hello</div>
               <div className="blog-post-preview" key={post.id}>
+                <div>Hello</div>
                 <h1 className="title">
                   <GatsbyLink to={post.frontmatter.path}>
                     {post.frontmatter.title}
